@@ -21,6 +21,7 @@ demo=# \dt
 
 Для запкска использовать
 ```
-sudo chmod 777 start.sh
+sudo chmod 777 -R postgres_pro_book_db
+cd postgres_pro_book_db
 ./start.sh
 ```
