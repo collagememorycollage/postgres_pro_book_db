@@ -1,0 +1,13 @@
+services:
+  pgdatabase:
+    build:
+      context: .
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - ./postgres:/var/lib/postgresql/data:rw
+      - ./demo-medium-20170815.sql:/docker-entrypoint-initdb.d/demo-medium-20170815.sql:ro
+    ports:
+      - "5432:5432"
