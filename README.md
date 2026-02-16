@@ -4,8 +4,13 @@
 demo=# \dt
 Did not find any relations.
 ```
-После можно использовать **\dt**
 
+Переподключиться через psql
+```
+\c demo
+```
+
+После можно использовать **\dt**
 ```
 demo=# \dt
                List of relations
